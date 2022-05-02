@@ -3,11 +3,11 @@ package com.example.gccoffee.repository;
 import static com.wix.mysql.EmbeddedMysql.anEmbeddedMysql;
 import static com.wix.mysql.config.MysqldConfig.aMysqldConfig;
 import static com.wix.mysql.distribution.Version.v5_7_latest;
-import static com.wix.mysql.distribution.Version.v8_0_11;
 import static org.hamcrest.MatcherAssert.*;
 import static org.hamcrest.Matchers.*;
 
 import com.example.gccoffee.model.Category;
+import com.example.gccoffee.model.OrderItem;
 import com.example.gccoffee.model.Product;
 import com.wix.mysql.EmbeddedMysql;
 import com.wix.mysql.ScriptResolver;

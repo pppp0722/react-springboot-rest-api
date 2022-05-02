@@ -17,7 +17,7 @@ public class Email {
     }
 
     private static boolean checkAddress(String address) {
-        return Pattern.matches("/\\b[\\w\\.-]+@[\\w\\.-]+\\.\\w{2,4}\\b/gi", address);
+        return Pattern.matches("\\b[\\w\\.-]+@[\\w\\.-]+\\.\\w{2,4}\\b", address);
     }
 
     @Override

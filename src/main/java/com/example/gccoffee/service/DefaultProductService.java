@@ -9,7 +9,7 @@ import java.util.UUID;
 import org.springframework.stereotype.Service;
 
 @Service
-public class DefaultProductService implements ProductService{
+public class DefaultProductService implements ProductService {
 
     ProductRepository repository;
 
@@ -36,7 +36,8 @@ public class DefaultProductService implements ProductService{
     @Override
     public Product createProduct(String productName, Category category, long price,
         String description) {
-        var product = new Product(UUID.randomUUID(), productName, category, price, description, LocalDateTime.now(), LocalDateTime.now());
+        var product = new Product(UUID.randomUUID(), productName, category, price, description,
+            LocalDateTime.now(), LocalDateTime.now());
         return repository.insert(product);
     }
 }

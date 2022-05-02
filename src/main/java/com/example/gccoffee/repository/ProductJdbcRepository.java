@@ -54,7 +54,7 @@ public class ProductJdbcRepository implements ProductRepository {
             toParamMap(product)
         );
 
-        if(update != 1) {
+        if (update != 1) {
             throw new RuntimeException("Nothing was updated!");
         }
 
